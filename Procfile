@@ -1,1 +1,1 @@
-web: gunicorn darajaapi.wsgi --log-file -
+web: gunicorn daraja.wsgi --log-file -
