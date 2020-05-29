@@ -1,3 +1,4 @@
+
 import datetime
 AWS_ACCESS_KEY_ID = "AKIARNFKIVVGLKOPQB6Q"
 AWS_SECRET_ACCESS_KEY = "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"
@@ -7,7 +8,7 @@ AWS_QUERYSTRING_AUTH = False
 
 DEFAULT_FILE_STORAGE = 'daraja.aws.utils.MediaRootS3BotoStorage'
 STATICFILES_STORAGE = 'daraja.aws.utils.StaticRootS3BotoStorage'
-AWS_STORAGE_BUCKET_NAME = 'daraja-api'
+AWS_STORAGE_BUCKET_NAME = 'daraja'
 S3DIRECT_REGION = 'eu-west-2'
 S3_URL = '//%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
 MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
