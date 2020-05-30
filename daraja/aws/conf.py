@@ -1,18 +1,14 @@
-
 import datetime
-
-from storages.backends.s3boto3 import S3Boto3Storage
-
-AWS_ACCESS_KEY_ID = "AKIARNFKIVVGKPSHMSGR"
-AWS_SECRET_ACCESS_KEY = "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"
+AWS_ACCESS_KEY_ID = "AKIARNFKIVVGDBYBWNNP"
+AWS_SECRET_ACCESS_KEY = "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"
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
-AWS_QUERYSTRING_AUTH = False
+AWS_QUERYSTRING_AUTH = True
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = 'daraja.aws.utils.MediaRootS3BotoStorage'
+STATICFILES_STORAGE = 'daraja.aws.utils.StaticRootS3BotoStorage'
 AWS_STORAGE_BUCKET_NAME = 'daraja-api'
-S3DIRECT_REGION = 'eu-west-2'
+S3DIRECT_REGION = 'us-west-2'
 S3_URL = '//%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
 MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
 MEDIA_ROOT = MEDIA_URL
