@@ -24,7 +24,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://floating-depths-21744.herokuapp.com",]
+ALLOWED_HOSTS = ["floating-depths-21744.herokuapp.com",]
 
 
 # Application definition
